@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Assignment</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="center-content">
+        <header>
+            <h1>Awesome Quiz Application</h1>
+        </header>
+
+        <section class="quiz-content quiz-start show-content">
+            <h2>Some rules for this Quiz!</h2>
+
+            <ol>
+                <li>
+                    You will only have <strong>15 seconds</strong> per question.
+                </li>
+                <li>Once you select your answer, it can't be undone.</li>
+                <li>You can't select any option once the timer goes off.</li>
+                <li>You can't exit from the Quiz while you're playing.</li>
+                <li>You'll get points on the basis of your correct answers.</li>
+            </ol>
+            <button>Start Quiz</button>
+        </section>
+
+        <section class="quiz-content quiz-question">
+            <h3 class="question"></h3>
+            <ul class="options"></ul>
+
+            <footer>
+                <div class="timer">
+                    <span class="time_left_txt">Time Left</span>
+                    <span class="timer_sec"></span>
+                </div>
+                <span class="status">
+                </span>
+            </footer>
+        </section>
+
+        <section class="quiz-content quiz-results">
+            <h2 class="text-center">You've completed the Quiz!</h2>
+
+            <h3 class="text-center">
+                Your score:
+                <span class="quiz-score"></span>
+            </h3>
+
+            <div class="text-center">
+                <button>Replay Quiz</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/javascript/questions.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
